@@ -1,0 +1,11 @@
+truncate table dia;
+truncate table trabajador;
+truncate table turno_semanal;
+truncate table estado_trabajador;
+insert into trabajador values ('alex','51544280L','recepcion', 'alejandro');
+insert into ESTADO_TRABAJADOR values (1,'alex','activo', to_date('01/01/2000','dd/MM/yyyy'),to_date('01/01/2030','dd/MM/yyyy'));
+insert into trabajador values ('mar','51544240L','recepcion', 'marta');
+insert into ESTADO_TRABAJADOR values (2,'mar','activo', to_date('01/01/2000','dd/mm/yyyy'),to_date('01/01/2030','dd/mm/yyyy'));
+insert into trabajador values ('baja','51944280L','mantenimiento', 'trabajador');
+insert into ESTADO_TRABAJADOR values (3,'baja','baja', to_date('01/01/2000','dd/MM/yyyy'),to_date('01/01/2030','dd/MM/yyyy'));
+commit;

@@ -1,0 +1,8 @@
+insert into cliente values(29,'Antonio','Alonso','51544282S',null,'875264159','aalonso@gmail.com',null,null,null,null,null,null,null);
+insert into habitacion values ('506CI2', 'libre','2', 'preciosa');
+insert into habitacion values ('5070CI2', 'libre','2', 'preciosa');
+insert into tipohabitacion values(47,1,to_date('01/01/2000','dd/MM/yyyy'),to_date('01/01/2030','dd/MM/yyyy'), 99);
+insert into tipohabitacion values(48,2,to_date('01/01/2000','dd/MM/yyyy'),to_date('01/01/2030','dd/MM/yyyy'), 90);
+insert into hth values ('506CI2',47);
+insert into hth values ('5070CI2',48);
+commit;

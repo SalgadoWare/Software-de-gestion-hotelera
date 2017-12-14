@@ -1,0 +1,30 @@
+insert into cliente values(19,'alex','martin','51544280S',null,'123456789','uniovi@live.es', null,null,null, null,null,null,null);
+insert into reserva values(19,19,'confirmada',0,null);
+
+insert into habitacion values ('76CO', 'libre','2', 'preciosa');
+insert into habitacion values ('78CO', 'libre','2', 'preciosa');
+insert into hth values ('76CO',55);
+insert into hth values ('78CO',56);
+insert into tipohabitacion values(55,1,to_date('01/01/2000','dd/MM/yyyy'),to_date('01/01/2030','dd/MM/yyyy'), 99);
+insert into tipohabitacion values(56,2,to_date('01/01/2000','dd/MM/yyyy'),to_date('01/01/2030','dd/MM/yyyy'), 90);
+
+insert into MODALIDAD_RESERVA_HABITACION values (110,'AD',to_date('01/11/2017','dd/MM/yyyy'),to_date('30/11/2017','dd/MM/yyyy'));
+insert into MODALIDAD_RESERVA_HABITACION values (111,'PC',to_date('01/11/2017','dd/MM/yyyy'),to_date('30/11/2017','dd/MM/yyyy'));
+
+insert into EXTRAS values(99,to_date('05/11/2017','dd/MM/yyyy'),to_date('20/11/2017','dd/MM/yyyy'),8,'promocion');
+insert into EXTRAS values(100,to_date('21/11/2017','dd/MM/yyyy'),to_date('5/12/2017','dd/MM/yyyy'),3,'suplemento');
+
+insert into reserva_habitacion values('76CO',19,110,to_date('01/11/2017','dd/MM/yyyy'),to_date('30/11/2017','dd/MM/yyyy'),0,null);
+insert into reserva_habitacion values('78CO',19,111,to_date('01/11/2017','dd/MM/yyyy'),to_date('30/11/2017','dd/MM/yyyy'),0,null);
+
+truncate table modalidad;
+insert into modalidad values('AD',to_date('07/11/15','dd/MM/yy'),to_date('30/11/30','dd/MM/yy'),50, 3);
+insert into modalidad values('AD',to_date('07/11/15','dd/MM/yy'),to_date('30/11/30','dd/MM/yy'),40, 2);
+insert into modalidad values('AD',to_date('07/11/15','dd/MM/yy'),to_date('30/11/30','dd/MM/yy'),30, 1);
+insert into modalidad values('MP',to_date('07/11/15','dd/MM/yy'),to_date('30/11/30','dd/MM/yy'),20, 3);
+insert into modalidad values('MP',to_date('07/11/15','dd/MM/yy'),to_date('30/11/30','dd/MM/yy'),10, 2);
+insert into modalidad values('MP',to_date('07/11/15','dd/MM/yy'),to_date('30/11/30','dd/MM/yy'),60, 1);
+insert into modalidad values('PC',to_date('07/11/15','dd/MM/yy'),to_date('30/11/30','dd/MM/yy'),55, 3);
+insert into modalidad values('PC',to_date('07/11/15','dd/MM/yy'),to_date('30/11/30','dd/MM/yy'),45, 2);
+insert into modalidad values('PC',to_date('07/11/15','dd/MM/yy'),to_date('30/11/30','dd/MM/yy'),25, 1);
+commit;

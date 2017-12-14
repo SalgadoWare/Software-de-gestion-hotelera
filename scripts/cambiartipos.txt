@@ -1,0 +1,7 @@
+insert into habitacion values ('3806CTH', 'libre','2', 'preciosa');
+insert into habitacion values ('39CTH', 'ocupada','2', 'preciosa');
+insert into tipohabitacion values(37,1,to_date('01/01/2000','dd/MM/yyyy'),to_date('01/01/2030','dd/MM/yyyy'), 80);
+insert into tipohabitacion values(38,2,to_date('01/01/2000','dd/MM/yyyy'),to_date('01/01/2030','dd/MM/yyyy'), 70);
+insert into hth values ('3806CTH',37);
+insert into hth values ('39CTH',38);
+commit;

@@ -1,0 +1,29 @@
+Factura del hotel generada debido a la anulación total de la reserva por parte del cliente
+24 horas antes de la entrada al hotel.
+
+Id de la reserva anulada: 2
+Fecha de la anulación total de la reserva: 21/11/2017
+
+Datos del cliente:
+	-Nombre: Carlos
+	-Apellidos: Sanabria
+	-DNI: 53558678G
+	-Pasaporte: p
+	-Tarjeta: 123456777
+	-E-mail: carlos@uniovi.es
+	-Fecha de nacimiento: 28/12/1997
+	-Móvil: 638938373
+	-Teléfono fijo: 984637283
+	-Dirección: C\ Pastor nº23 3ºE
+	-Código postal: 33209
+
+Información de las habitaciones reservadas:
+	- 200H - 22/11/2017 - 23/11/2017
+
+Importe de las habitaciones reservadas (teniendo en cuenta sólo el tipo de la habitación): 120.0
+Importe de la factura (50% del importe anterior): 60.0
+
+Esta factura se va a cargar a la tarjeta 123456777 asociada al cliente.
+
+Fecha de la generación de la factura: 21/11/2017
+
